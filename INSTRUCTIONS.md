@@ -1,47 +1,39 @@
-# Instructions — .github-template
+# Instructions — dropafile `.github`
 
-Guide for maintainers and coding agents working on this **hosted template** and for orgs adopting it.
+Guide for maintainers and coding agents working on the **public organization meta-repository** (`dropafile/.github`).
 
-## What this template is
+## What this repository is
 
-A scaffold for the GitHub **public organization meta-repository** (`.github`):
+| Path | Role |
+|------|------|
+| [`profile/README.md`](profile/README.md) | **Public org profile** on [github.com/dropafile](https://github.com/dropafile) |
+| [`README.md`](README.md) | Landing page when browsing this repo |
+| [`INSTRUCTIONS.md`](INSTRUCTIONS.md) | This file |
+| [`CHANGELOG.md`](CHANGELOG.md) | Notable changes to this meta-repo |
+| [`docs/`](docs/README.md) | Workflows and GitHub UI files **in this repo** |
 
-| Layer | Purpose |
-|-------|---------|
-| **Root** (this repo until init) | @open-templates branding + reference [`profile/README.md`](profile/README.md) |
-| [`templates/profile/README.md`](templates/profile/README.md) | Adopter public org profile — copied to `profile/README.md` on init |
-| **`templates/`** (other files) | Meta-repo docs copied to root by `./scripts/init-from-template.sh` |
-
-Adopters create a **public** org repo named exactly `.github`, run init, then fill in `profile/README.md` with their template catalog.
-
-See [specs/features/01-purpose.md](specs/features/01-purpose.md) and [templates/ABOUT_TEMPLATES.md](templates/ABOUT_TEMPLATES.md).
+Application source code lives in [**dropafile**](https://github.com/dropafile/dropafile). Keep the org profile focused on what visitors need — link to the repo and summarize in one line; do not duplicate the full project README here.
 
 ---
 
-## First steps after “Use this template”
+## Editing the org profile README
 
-1. **Initialize** — `./scripts/init-from-template.sh` (see [docs/init-from-template.md](docs/init-from-template.md)).
-2. **Create org repo** — Public repository named `.github` under your GitHub org (if not created via template).
-3. **Push** — Open [github.com/your-org](https://github.com/your-org) to preview the public org profile.
-4. **Edit catalog** — Add template rows to `profile/README.md`.
-5. **Optional** — Scaffold [`.github-private-template`](https://github.com/open-templates/.github-private-template) for member-only maintainer notes.
+[`profile/README.md`](profile/README.md) supports GitHub-flavored markdown plus limited HTML (e.g. `<div align="center">`).
 
----
+Guidelines:
 
-## Template catalog maintenance (adopters)
+- Lead with what the organization ships and who it is for.
+- List repositories in the **Repositories** table: **Repository** | **Summary**.
+- Keep links absolute to `https://github.com/dropafile/<repo>`.
+- Avoid secrets, internal URLs, or operational detail on this **public** page.
 
-When your org publishes a new template repository:
+Preview: push to `main` and open [github.com/dropafile](https://github.com/dropafile).
 
-1. Add a row to `profile/README.md` (public summary only).
-2. Update `README.md` quick-reference tables if used.
-3. Record changes in `CHANGELOG.md`.
-4. If you use `.github-private`, sync member-facing rows there too.
-
-Full playbook: adopter [`templates/INSTRUCTIONS.md`](templates/INSTRUCTIONS.md) (copied to root on init).
+When **dropafile** gains major features or positioning changes, update the summary row in `profile/README.md` and mirror any quick-reference tables in [`README.md`](README.md).
 
 ---
 
-## Automation in this template
+## Automation in this repo
 
 | Asset | Role |
 |-------|------|
@@ -49,29 +41,16 @@ Full playbook: adopter [`templates/INSTRUCTIONS.md`](templates/INSTRUCTIONS.md) 
 | `.github/workflows/dependabot-signature.yml` | `Co-authored-by` on Dependabot commits |
 | `.github/CODEOWNERS` | Review ownership |
 
-Details: [docs/README.md](docs/README.md) · [specs/features/04-github-automation.md](specs/features/04-github-automation.md).
+Details: [docs/README.md](docs/README.md).
 
 ---
 
 ## Agent checklist
 
-1. Read [index.md](index.md) and [specs/FEATURES.md](specs/FEATURES.md).
-2. Distinguish **hosted template** changes (root + `scripts/` + `templates/`) from **adopter** content (copied on init).
-3. **Org profile edits on this hosted repo:** change [`templates/profile/README.md`](templates/profile/README.md); root [`profile/README.md`](profile/README.md) is a **placeholder demo** only (not the live open-templates catalog).
-4. Keep `fixedRepoName: '.github'` in `scripts/init-from-template.mjs`.
-5. Never put secrets or internal operational detail in the public `profile/README.md`.
-
----
-
-## Repository map
-
-```text
-profile/README.md                 # reference public org profile (hosted demo)
-templates/profile/README.md       # adopter profile → profile/README.md on init
-templates/                        # other adopter files → repo root on init
-scripts/init-from-template.mjs    # manifest includes profile/README.md
-specs/features/03-org-profile.md  # public vs optional member profile contract
-```
+1. Read [`profile/README.md`](profile/README.md) and this file.
+2. Confirm whether a change belongs in the **org profile** (this repo) or **dropafile** (application repo).
+3. Update the repository table row when dropafile's public summary changes; sync [`README.md`](README.md) if needed.
+4. Append [`CHANGELOG.md`](CHANGELOG.md) for meta-repo changes.
 
 ---
 

@@ -1,45 +1,23 @@
 # Contributing
 
-Thanks for helping improve this project.
+Thanks for contributing to **dropafile/.github**.
 
-## Code of Conduct
-
-Participation means agreeing to [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
-
-## Local setup
+## Setup
 
 ```bash
-git clone https://github.com/YOUR_ORG/YOUR_REPO.git
-cd YOUR_REPO
+git clone https://github.com/dropafile/.github.git
+cd .github
 ```
-
-Add stack-specific setup steps here once the project grows beyond the empty template.
-
-## What to work on
-
-- Start from the template and open focused PRs
-- Prefer one feature or fix per PR for clearer CHANGELOG batches
 
 ## Pull requests
 
 1. Branch from `main`.
-2. Keep changes small and focused.
-3. Run any checks you add (this template ships without CI workflows).
-4. Open a PR using the repository pull request template.
-
-## Commit style
-
-[Conventional commits](https://www.conventionalcommits.org/) are preferred so releases can be batched into [CHANGELOG.md](CHANGELOG.md):
-
-- `feat: add user profile endpoint`
-- `fix: handle missing env variable`
-- `docs: update setup section`
-
-See [INSTRUCTIONS.md](INSTRUCTIONS.md) for feature-based CHANGELOG workflow.
+2. Keep the org profile concise — link to [dropafile](https://github.com/dropafile/dropafile) for application detail.
+3. Open a PR using the repository template.
 
 ## License
 
-By contributing, you agree your changes are licensed under MIT (see [LICENSE](LICENSE)).
+By contributing, you agree your changes are licensed under MIT.
 
 ---
 

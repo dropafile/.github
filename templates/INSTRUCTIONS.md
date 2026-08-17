@@ -6,43 +6,13 @@ Guide for maintainers and coding agents working on the **public organization met
 
 | Path | Role |
 |------|------|
-| [`profile/README.md`](profile/README.md) | **Public org profile** — template catalog on [github.com/owner-username](https://github.com/owner-username) |
+| [`profile/README.md`](profile/README.md) | **Public org profile** on [github.com/owner-username](https://github.com/owner-username) |
 | [`README.md`](README.md) | Landing page when browsing this repo |
 | [`INSTRUCTIONS.md`](INSTRUCTIONS.md) | This file |
 | [`CHANGELOG.md`](CHANGELOG.md) | Notable changes to this meta-repo |
 | [`docs/`](docs/README.md) | Workflows and GitHub UI files **in this repo** |
 
-Template source code lives in **separate repositories**. Do not duplicate full template READMEs in the org profile — link out and summarize in one sentence.
-
-### Optional private member profile
-
-Some orgs also maintain [`.github-private`](https://github.com/owner-username/.github-private) for member-only catalog extras (maintainer tables, internal doc links). Keep **public summaries** here; put member-only detail there.
-
----
-
-## Template categories
-
-| Category | Purpose | Example |
-|----------|---------|---------|
-| **Repository templates** | Empty repo shells | `github-repo-template` |
-| **Package templates** | Publishable libraries | `npm-package-template` |
-| **Frontend templates** | Client apps | Your SPA templates |
-| **Backend templates** | APIs and workers | Your API templates |
-
-Call out **bundles** when frontend and backend templates share a contract.
-
----
-
-## Adding a new template to the org index
-
-1. **Publish** the template under `owner-username`.
-2. **Choose a category** (repo, package, frontend, backend).
-3. **Update [`profile/README.md`](profile/README.md)** — add a table row: name (link) + one-line summary.
-4. **Update [`README.md`](README.md)** quick-reference tables to match.
-5. **Record the change** in [`CHANGELOG.md`](CHANGELOG.md).
-6. **Org profile description** (optional): GitHub org **Settings → Profile** — keep in sync with the tagline in `profile/README.md`.
-
-If you use `.github-private`, mirror catalog rows there with optional **Docs** links for members.
+Application source code lives in [**dropafile**](https://github.com/owner-username/dropafile). Keep the org profile focused on what visitors need — link to the repo and summarize in one line; do not duplicate the full project README here.
 
 ---
 
@@ -52,12 +22,14 @@ If you use `.github-private`, mirror catalog rows there with optional **Docs** l
 
 Guidelines:
 
-- Lead with what your org offers and how to use templates.
-- One table per category; consistent columns: **Template** | **Summary**.
+- Lead with what the organization ships and who it is for.
+- List repositories in the **Repositories** table: **Repository** | **Summary**.
 - Keep links absolute to `https://github.com/owner-username/<repo>`.
 - Avoid secrets, internal URLs, or operational detail on this **public** page.
 
 Preview: push to `main` and open [github.com/owner-username](https://github.com/owner-username).
+
+When **dropafile** gains major features or positioning changes, update the summary row in `profile/README.md` and mirror any quick-reference tables in [`README.md`](README.md).
 
 ---
 
@@ -76,10 +48,9 @@ Details: [docs/README.md](docs/README.md).
 ## Agent checklist
 
 1. Read [`profile/README.md`](profile/README.md) and this file.
-2. Confirm which **category** a template belongs to.
-3. Add a table row; sync [`README.md`](README.md) if used.
-4. Append [`CHANGELOG.md`](CHANGELOG.md).
-5. Do not expose member-only operational detail on the public profile.
+2. Confirm whether a change belongs in the **org profile** (this repo) or **dropafile** (application repo).
+3. Update the repository table row when dropafile's public summary changes; sync [`README.md`](README.md) if needed.
+4. Append [`CHANGELOG.md`](CHANGELOG.md) for meta-repo changes.
 
 ---
 

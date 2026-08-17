@@ -1,21 +1,25 @@
 # owner-display-name / `.github`
 
-This is the [**special `.github` repository**](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile) for the [owner-username](https://github.com/owner-username) organization.
+Meta-repository for the [**owner-display-name**](https://github.com/owner-username) organization — the special [`.github`](https://docs.github.com/en/organizations/collaborating-with-groups-in-organizations/customizing-your-organizations-profile) repo that powers the public org profile and shared governance.
 
-- **`profile/README.md`** — Renders on the [organization profile](https://github.com/owner-username) as the **public** template catalog (visible to everyone).
-- **Root files** — Meta-repo governance for the org itself, not for individual templates.
+| Path | Role |
+|------|------|
+| [`profile/README.md`](profile/README.md) | **Public org homepage** on [github.com/owner-username](https://github.com/owner-username) |
+| Root docs | Governance and GitHub automation for this meta-repo |
 
-Individual templates live in separate repositories (see the catalog in [`profile/README.md`](profile/README.md)).
+## Open source
 
-Optional: orgs with a private member catalog can pair this repo with [`.github-private`](https://github.com/owner-username/.github-private).
+| Repository | Summary |
+|------------|---------|
+| [**dropafile**](https://github.com/owner-username/dropafile) | Live peer-to-peer file drops — ephemeral rooms, WebSocket signaling, browser-to-browser transfers. No accounts, no storage. |
 
 ---
 
 ## Maintainers
 
-- Edit the org profile index: [`profile/README.md`](profile/README.md)
-- Process for new templates: [INSTRUCTIONS.md](INSTRUCTIONS.md)
-- Org-level changes: [CHANGELOG.md](CHANGELOG.md)
+- Edit the org profile: [`profile/README.md`](profile/README.md)
+- Maintainer guide: [INSTRUCTIONS.md](INSTRUCTIONS.md)
+- Meta-repo changes: [CHANGELOG.md](CHANGELOG.md)
 
 Workflow reference for **this** repo: [docs/README.md](docs/README.md).
 
