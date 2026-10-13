@@ -1,12 +1,18 @@
-<div align="center">
+<img src="../.github/icon-cropped.png" width="200" alt="dropafile" align="left"/>
 
-# dropafile
+<div>
 
-### Drop a file. Everyone gets it live.
+### dropafile
+
+**Drop a file. Everyone gets it live.**
 
 **Ephemeral, live-session file sharing** — spin up a room, share a link or QR code, and let connected peers download what you share in real time.
 
-**No accounts · No cloud storage · Peer-to-peer while online**
+</div>
+
+<br/><br/>
+
+<div align="center">
 
 <p>
   <a href="https://github.com/dropafile/dropafile"><img src="https://img.shields.io/badge/Source-dropafile-24292f?style=for-the-badge&logo=github&logoColor=white" alt="Source repository" /></a>
@@ -19,6 +25,17 @@
 <img src="https://img.shields.io/badge/Live%20sessions-WebSocket%20%2B%20Durable%20Objects-f38020?style=flat-square&logo=cloudflare&logoColor=white" alt="Cloudflare Workers" />
 <img src="https://img.shields.io/badge/Stack-Hono%20%2B%20React-646cff?style=flat-square&logo=react&logoColor=white" alt="Hono and React" />
 <img src="https://img.shields.io/badge/License-MIT-blue?style=flat-square" alt="MIT License" />
+
+<br/>
+<br/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="../.github/screenshot_dark.png"/>
+  <source media="(prefers-color-scheme: light)" srcset="../.github/screenshot.png"/>
+  <img src="../.github/screenshot.png" width="824" alt="dropafile — live file sharing" style="border-radius: 5px;"/>
+</picture><br/>
+
+**No accounts · No cloud storage · Peer-to-peer while online**
 
 </div>
 
@@ -112,6 +129,6 @@ Start empty and share the link, or drop a file and go live in one move.
   <a href="https://github.com/dropafile/.github/blob/main/CODE_OF_CONDUCT.md"><strong>Code of Conduct</strong></a>
 </p>
 
-<sub>MIT · Maintained by <a href="https://github.com/xarlizard">@xarlizard</a> · <a href="https://github.com/dropafile">@dropafile</a></sub>
+<sub>MIT · Maintained by <a href="https://github.com/charlite">@charlite</a> · <a href="https://github.com/dropafile">@dropafile</a></sub>
 
 </div>
